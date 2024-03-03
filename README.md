@@ -32,7 +32,7 @@ Dengan menggunakan teknik preprocesing yang tepat dapat membantu kinerja model d
 
 Solusi yang dapat digunakan untuk menyelesaikan permasalahan ini adalah dengan menggunakan pendekatan RNN (Recurrent Neural Network). RNN adalah jenis arsitektur jaringan saraf yang sangat cocok untuk memproses urutan data, seperti teks. Dengan memanfaatkan kemampuan RNN untuk memahami konteks urutan data, kita dapat menggunakannya untuk menganalisis dan mengklasifikasikan emosi dalam pesan-pesan Twitter.
 
-![model]([relative/path/in/repository/to/image.svg](https://github.com/AcqmalFadhilla/emotion-classification-with-tfx/blob/master/images/Screenshot%202024-03-03%20at%2009.49.14.png))
+![model](https://github.com/AcqmalFadhilla/emotion-classification-with-tfx/blob/master/images/Screenshot%202024-03-03%20at%2009.49.14.png)
 
 
 ## metriks evaluasi
@@ -41,6 +41,18 @@ Dalam mengukur kinerja model menggunakan beberapa metrik evaluasi seperti accura
 
 ## Performa model
 
+Model ini memperoleh hasil yang cukup baik, dengan
+
+accuracy:79% 
+
+precision:90%
+
+recall:72% 
+
+f1-score:80%
+
+Hasil ini menunjukkan bahwa model memiliki kinerja yang lumayan baik dalam mengklasifikasikan data uji.
 
 
-acqmal fadhilla latief
+by acqmal fadhilla latief
+
