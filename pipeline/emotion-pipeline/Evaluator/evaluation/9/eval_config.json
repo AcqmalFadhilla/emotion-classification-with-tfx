@@ -1,0 +1,59 @@
+{
+  "evalConfig": {
+    "modelSpecs": [
+      {
+        "labelKey": "label"
+      }
+    ],
+    "slicingSpecs": [
+      {}
+    ],
+    "metricsSpecs": [
+      {
+        "metrics": [
+          {
+            "className": "ExampleCount"
+          },
+          {
+            "className": "Precision"
+          },
+          {
+            "className": "Recall"
+          },
+          {
+            "className": "F1Score"
+          },
+          {
+            "className": "FalsePositives"
+          },
+          {
+            "className": "TruePositives"
+          },
+          {
+            "className": "FalseNegatives"
+          },
+          {
+            "className": "TrueNegatives"
+          },
+          {
+            "className": "CategoricalAccuracy",
+            "threshold": {
+              "valueThreshold": {
+                "lowerBound": 0.5
+              }
+            }
+          }
+        ],
+        "modelNames": [
+          ""
+        ]
+      }
+    ]
+  },
+  "version": "0.45.0",
+  "dataLocation": "<user provided PCollection>",
+  "fileFormat": "<unknown>",
+  "modelLocations": {
+    "": "pipeline/emotion-pipeline/Trainer/model/6/Format-Serving"
+  }
+}
