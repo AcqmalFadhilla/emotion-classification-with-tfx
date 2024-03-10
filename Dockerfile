@@ -1,6 +1,6 @@
 FROM tensorflow/serving:latest
 
-COPY ./output/serving_model /models/1709760128
+COPY ./output/serving_model /models
 COPY ./config /model_config
 
 ENV MODEL_NAME=1709760128
