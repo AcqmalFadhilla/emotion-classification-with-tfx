@@ -50,3 +50,5 @@ if __name__ == "__main__":
 
     pipeline = init_local_pipeline(components, pipeline_root)
     BeamDagRunner().run(pipeline=pipeline)
+
+    
