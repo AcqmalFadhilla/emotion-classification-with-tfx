@@ -13,7 +13,7 @@ nltk.download('punkt')
 
 st.title("Emotion Text Classification")
 
-end_point = 'http://<external-ip>:8501/v1/models/1709760128:predict'
+end_point = 'http://34.101.239.27:8501/v1/models/1709760128:predict'
 
 
 stemmer = PorterStemmer()
@@ -69,4 +69,7 @@ def generate_response(input_text):
 with st.form("my_form"):
     text = st.text_area("Enter text:")
     submitted = st.form_submit_button("Submit")
-    generate_response(text)
+    if not submitted:
+        st.info("silahkan masukkan kalimat")
+    else:
+        generate_response(text)
