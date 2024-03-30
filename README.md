@@ -53,6 +53,11 @@ f1-score:80%
 
 Hasil ini menunjukkan bahwa model memiliki kinerja yang lumayan baik dalam mengklasifikasikan data uji.
 
+## Deployment
+
+## Web App
+
+## Monitoring
 
 by acqmal fadhilla latief
 
