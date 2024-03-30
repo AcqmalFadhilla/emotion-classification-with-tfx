@@ -1,6 +1,6 @@
 global:
   scrape_interval: 15s
-  evalution_interval: 15s
+  evaluation_interval: 15s
   external_labels:
     monitoring: "tf-serving-monitor"
 
@@ -9,4 +9,4 @@ scrape_configs:
     scrape_interval: 5s 
     metrics_path: /monitoring/prometheus/metrics 
     static_configs:
-      - targets: ['<External IP>:8501']
+      - targets: ['<external-ip>:8501']

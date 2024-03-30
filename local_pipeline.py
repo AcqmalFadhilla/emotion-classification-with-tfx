@@ -21,7 +21,7 @@ def init_local_pipeline(components, pipeline_root: Text) -> pipeline.Pipeline:
     logging.info(f"Pipeline root set to: {pipeline_root}")
     beam_args = [
         "--direct_running_mode=multi_processing"
-        "--dircet_num_workers=0"
+        "----direct_num_workers=0" 
     ]
 
     return pipeline.Pipeline(
