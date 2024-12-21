@@ -32,7 +32,7 @@ Dengan menggunakan teknik preprocesing yang tepat dapat membantu kinerja model d
 
 Solusi yang dapat digunakan untuk menyelesaikan permasalahan ini adalah dengan menggunakan pendekatan RNN (Recurrent Neural Network). RNN adalah jenis arsitektur jaringan saraf yang sangat cocok untuk memproses urutan data, seperti teks. Dengan memanfaatkan kemampuan RNN untuk memahami konteks urutan data, kita dapat menggunakannya untuk menganalisis dan mengklasifikasikan emosi dalam pesan-pesan Twitter.
 
-![model](https://github.com/AcqmalFadhilla/emotion-classification-with-tfx/blob/master/images/Screenshot%202024-03-03%20at%2009.49.14.png)
+<img src="images/model.png" alt="model-img">
 
 
 ## metriks evaluasi
@@ -55,6 +55,8 @@ Hasil ini menunjukkan bahwa model memiliki kinerja yang lumayan baik dalam mengk
 
 ## API Reference
 
+Deployment menggunakan GCP
+
 #### Predict
 
 ```http
@@ -73,12 +75,19 @@ Hasil ini menunjukkan bahwa model memiliki kinerja yang lumayan baik dalam mengk
   http://34.50.88.149:3000 
 ```
 
-## Demo
-Untuk melakukan demo silahkan install docker terlebih dahulu dan jalankan perintah yang dibawah ini
+## Demo dan Tautan web
+<img src="images/image-web.png" alt="img">
+
+Untuk melakukan demo secara local silahkan install docker terlebih dahulu dan jalankan perintah yang dibawah ini
 ```bash
-  docker pull acqmal/web-app-emotion
+  docker build -t <name_user>/emotion-classification
   docker run -p 8501:8501 acqmal/web-app-emotion
 ```
+Note: Posisi directory lagi didalam folder app
+
+atau bisa menggunakan link dibawah ini
+
+Link web:<a href="https://emotion-classification-tfx.streamlit.app/">link</a>
 
 ## Monitoring
 <img src="images/acqmal-grafana-dashboard.png" alt="image" width="1000" height="500">Dashboard Grafana ini memantau kinerja TensorFlow Serving dengan panel berikut:

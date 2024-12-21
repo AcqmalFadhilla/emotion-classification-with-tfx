@@ -5,17 +5,15 @@ import base64
 import nltk
 import re
 import os
-from dotenv import load_dotenv
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 nltk.download('stopwords')
 nltk.download('punkt')
-load_dotenv()
 
 st.title("Emotion Text Analyze")
 
-end_point = os.environ.get("API_PREDICTION")
+end_point = st.secrets["API_PREDICTION"]
 
 stemmer = PorterStemmer()
 stop_words = stopwords.words('english')
