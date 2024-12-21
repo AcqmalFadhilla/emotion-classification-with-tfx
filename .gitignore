@@ -1,3 +1,5 @@
 .idea
 __pychace__
+.env
+.streamlit
 .DS_Store
