@@ -60,19 +60,19 @@ Deployment menggunakan GCP
 #### Predict
 
 ```http
-  http://34.50.88.149:8501/v1/models/1709760128:predict
+  http://<external_ip>:8501/v1/models/1709760128:predict
 ```
 
 #### Prometheus
 
 ```http
-  http://34.101.33.61:9090
+  http://<external_ip>:9090
 ```
 
 #### Grafana
 
 ```http
-  http://34.50.88.149:3000 
+  http://<external_ip>:3000 
 ```
 
 ## Demo dan Tautan web
@@ -80,7 +80,7 @@ Deployment menggunakan GCP
 
 Untuk melakukan demo secara local silahkan install docker terlebih dahulu dan jalankan perintah yang dibawah ini
 ```bash
-  docker build -t <name_user>/emotion-classification
+  docker build -t <name_user>/emotion-classification .
   docker run -p 8501:8501 acqmal/web-app-emotion
 ```
 Note: Posisi directory lagi didalam folder app
