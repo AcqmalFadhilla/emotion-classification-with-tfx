@@ -9,7 +9,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
 nltk.download('stopwords')
-nltk.download('punkt')
+nltk.download('punkt_tab')
 
 st.title("Emotion Text Analyze")
 
